@@ -14,7 +14,6 @@ namespace PopulationTask.Tests
 
         [TestCase(0, 0.25, 1000, 2000000)]
         [TestCase(-100, 0.25, 1000, 2000000)]
-        [Property("Mark", 2)]
         public void GetYears_InitialPopulation_LessOrEqualsZero_ThrowArgumentException(int initialPopulation,
             double percent, int visitors, int currentPopulation)
         {
@@ -25,7 +24,6 @@ namespace PopulationTask.Tests
 
         [TestCase(1500, 101, 100, 5000)]
         [TestCase(1500, -1, 100, 5000)]
-        [Property("Mark", 2)]
         public void GetYears_PercentOutOfRange_ThrowArgumentOutOfRangeException(int initialPopulation,
             double percent, int visitors, int currentPopulation)
         {
@@ -36,7 +34,6 @@ namespace PopulationTask.Tests
 
         [TestCase(1500, 5, -100, 5000)]
         [TestCase(1500, 1, -5, 5000)]
-        [Property("Mark", 2)]
         public void GetYears_Visitors_LessOrEqualsZero_ThrowArgumentException(int initialPopulation, double percent,
             int visitors, int currentPopulation)
         {
@@ -47,7 +44,6 @@ namespace PopulationTask.Tests
 
         [TestCase(0, 0.25, 1000, 0)]
         [TestCase(-100, 0.25, 1000, -100)]
-        [Property("Mark", 2)]
         public void GetYears_CurrentPopulation_LessOrEqualsZero_ThrowArgumentException(int initialPopulation,
             double percent, int visitors, int currentPopulation)
         {
