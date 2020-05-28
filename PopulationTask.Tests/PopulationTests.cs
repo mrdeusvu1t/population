@@ -52,5 +52,15 @@ namespace PopulationTask.Tests
                     Population.GetYears(initialPopulation, percent, visitors, currentPopulation),
                 message: "Current population cannot be less or equals zero.");
         }
+        
+        [TestCase(10, 0.25, 1000, 5)]
+        [TestCase(100, 0.25, 1000, 50)]
+        public void GetYears_CurrentPopulation_LessThanInitial_ThrowArgumentException(int initialPopulation,
+            double percent, int visitors, int currentPopulation)
+        {
+            Assert.Throws<ArgumentException>(() =>
+                    Population.GetYears(initialPopulation, percent, visitors, currentPopulation),
+                message: "Current population cannot be less than initial population.");
+        }
     }
 }
