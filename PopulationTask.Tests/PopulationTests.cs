@@ -34,7 +34,7 @@ namespace PopulationTask.Tests
 
         [TestCase(1500, 5, -100, 5000)]
         [TestCase(1500, 1, -5, 5000)]
-        public void GetYears_Visitors_LessOrEqualsZero_ThrowArgumentException(int initialPopulation, double percent,
+        public void GetYears_Visitors_LessZero_ThrowArgumentException(int initialPopulation, double percent,
             int visitors, int currentPopulation)
         {
             Assert.Throws<ArgumentException>(() =>
