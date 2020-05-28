@@ -4,6 +4,7 @@ using NUnit.Framework;
 namespace PopulationTask.Tests
 {
     [TestFixture]
+    [Timeout(2_000)]
     public class PopulationTests
     {
         [TestCase(1500, 5, 100, 5000, ExpectedResult = 15)]
