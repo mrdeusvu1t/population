@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PopulationTask
 {
@@ -13,11 +13,11 @@ namespace PopulationTask
         /// <param name="currentPopulation">The population at present.</param>
         /// <returns>The count of years which the town need to see its population greater or equal to currentPopulation inhabitants.</returns>
         /// <exception cref="ArgumentException">
-        /// Throw if initial population is less or equals zero
+        /// Thrown when initial population is less or equals 0
         /// - or -
-        /// the count of visitors cannot be less zero
+        /// the count of visitors cannot be less 0
         /// - or -
-        /// the current population is less or equals zero
+        /// the current population is less or equals 0
         /// - or -
         /// the current population is less than initial population.
         /// </exception>
