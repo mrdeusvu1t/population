@@ -5,7 +5,7 @@ namespace PopulationTask
     public static class Population
     {
         /// <summary>
-        /// Calculate the count of years which the town need to see its population greater or equal to currentPopulation inhabitants.
+        /// Calculates the count of years which the town need to see its population greater or equal to currentPopulation inhabitants.
         /// </summary>
         /// <param name="initialPopulation">The population at the beginning of a year.</param>
         /// <param name="percent">The percentage of growth per year.</param>
@@ -24,7 +24,7 @@ namespace PopulationTask
         /// <exception cref="ArgumentOutOfRangeException">Throw if the value of percents is less then 0% or more then 100%.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            throw new NotImplementedException("You need to implement this method.");
         }
     }
 }
